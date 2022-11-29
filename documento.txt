@@ -1,0 +1,12 @@
+
+* python -m django --version // Es para ver la version del proyecto 
+* djgango-admin --version  // Es para ver la version del proyecto
+* pip freeze // Es para ver la version del proyecto 
+
+django-admin startproyecto core . // Es para crear un proyecto 
+
+python manage.py runserver  3000 // Es para decirle a django que corra en otro puerto 
+
+Otro manare para acceder es localhost:300
+
+Estructura de proyecto 
