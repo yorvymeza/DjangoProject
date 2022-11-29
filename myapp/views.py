@@ -11,3 +11,7 @@ def saludar(request):
 
 def about(request):
 	return HttpResponse("About")
+
+
+def hola(request):
+	return HttpResponse("Hola")
