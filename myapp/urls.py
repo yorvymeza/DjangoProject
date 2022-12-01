@@ -16,5 +16,6 @@ urlpatterns = [
   path('',views.saludar),
   path('about/',views.about),
   path('hola/', views.hola),
+  path('hello/<str:username>', views.hello2),
 
 ]
