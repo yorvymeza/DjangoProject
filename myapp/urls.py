@@ -18,4 +18,9 @@ urlpatterns = [
   path('hola/', views.hola),
   path('hello/<str:username>', views.hello2),
 
+  # Vamos a crear una ruta projects y tasks
+  path('projects/', views.projects),
+  path('tasks/', views.tasks)
+
+
 ]

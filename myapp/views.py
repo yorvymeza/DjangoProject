@@ -1,6 +1,12 @@
 from django.shortcuts import render
 
-from django.http import HttpResponse
+from django.http import HttpResponse,JsonResponse
+
+# from django.http import HttpResponse, JsonResponse
+# JsonResponse Para que el navegador pueda reconocerlo
+
+# Vamos import los modelos para hacer una consulta
+from .models import Project
  
 # Create your views here.
 
@@ -23,3 +29,23 @@ def hello2(request, username):
 	# para concatenarlo lo hacemos con 
 	#  %s return HttpResponse("<h1>Hola %s como estas </h1>" %username)
 	print(username)
+
+	# De esta forma nosotros tenemos un parametros que podemos ir cambiando
+	# y ir visitando otra
+
+
+def projects(request):
+	# Esto es un queryset
+	# projects = list(Project.objects.all())
+	# Esto es porque esto llamando todo loo datos
+	# Yo solo quiero los valores
+	projects = list(Project.objects.values())
+
+	return JsonResponse(projects, safe=False)
+
+
+	# return HttpResponse('projects')
+
+
+def tasks(request):
+	return HttpResponse('tasks')
