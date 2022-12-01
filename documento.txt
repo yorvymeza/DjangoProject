@@ -29,8 +29,16 @@ a la funcion hello
 
 
 
+Como podemos pasar nuestro modelo 
+a nuestro admin de administrador?
+debemos ir a nuestro archivo
+admin.py
 
+from .models import Project, Task
 
+admin.site.register(Project)
+admin.site.register(Task)
+De esta forma importamos Nuestro modelos
 
 
 
