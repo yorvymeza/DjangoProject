@@ -6,7 +6,7 @@ from django.http import HttpResponse,JsonResponse
 # JsonResponse Para que el navegador pueda reconocerlo
 
 # Vamos import los modelos para hacer una consulta
-from .models import Project
+from .models import Project, Task
  
 # Create your views here.
 
