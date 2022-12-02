@@ -40,6 +40,36 @@ admin.site.register(Project)
 admin.site.register(Task)
 De esta forma importamos Nuestro modelos
 
+-----------------------------------------------
+el archivo se llama forms.py
+
+from django import forms
+
+class CreateNewTask(forms.Form):
+         #Este se envia al html
+         # y se convierte en un input
+	title = forms.CharField(label="Titulo de tareas", max_length=200)
+        description=forms.Textarea(label="Description de tarea", required=False)
+
+Muy importante debemos importar la clase CreateNewTask
+en la vista from .forms import CreateNewTask
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

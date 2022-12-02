@@ -12,6 +12,7 @@ class Project(models.Model):
 	# El null=True es muy necesario
 	price = models.FloatField(null=True)
 	# Tambien he visto que usan default='anything'
+	# default=False
 	email = models.EmailField(max_length= 255, unique=True, null=True)
 
 

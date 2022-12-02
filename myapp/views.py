@@ -11,8 +11,8 @@ from .models import Project, Task
 # Create your views here.
 
 #Primer hola mundo
-def saludar(request):
-	return HttpResponse("<h1>Hello World</h1>")
+# def saludar(request):
+# 	return HttpResponse("<h1>Hello World</h1>")
 
 
 def about(request):
@@ -49,3 +49,8 @@ def projects(request):
 
 def tasks(request):
 	return HttpResponse('tasks')
+
+
+
+def create_task(request):
+	return HttpResponse('create_task.html')

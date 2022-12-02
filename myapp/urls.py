@@ -13,14 +13,15 @@ from .  import  views
 # Recodemos que esto es una lista urlpatterns[]
 urlpatterns = [
 
-  path('',views.saludar),
+  # path('',views.saludar),
   path('about/',views.about),
   path('hola/', views.hola),
   path('hello/<str:username>', views.hello2),
 
   # Vamos a crear una ruta projects y tasks
   path('projects/', views.projects),
-  path('tasks/', views.tasks)
+  path('tasks/', views.tasks),
+  path('create_task/', views.create_task)
 
 
 ]
